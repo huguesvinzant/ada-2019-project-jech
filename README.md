@@ -31,7 +31,7 @@ This [dataset](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-prese
 Yelp.com is a website that helps people find great local businesses such as restaurants based on customer reviews. Each business has a page where visitors can write comments and add a general grade reflecting their experience there. We can access these business ratings through their Yelp Fusion API for all businesses with at least one review. The API also gives us other relevant information such as the number of reviews, which will be a factor taken into account while ranking the restaurants. Moreover, it is possible to search for the businesses via their latitude and longitude location data, which is of great interest in our project framework, as our main CFI dataset contains the latitude and longitude of the restaurants as well. A more detailed description of the API can be found [here](https://www.yelp.com/developers/documentation/v3/business_search).
 
 
-# A list of internal milestones up until project milestone 2
+# A list of internal milestones 
 **Due by Monday, November 4**
 
 - Clean CFI dataset
