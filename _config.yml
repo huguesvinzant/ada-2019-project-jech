@@ -6,13 +6,13 @@
 title: A short guide on where to safely eat delicious food in Chicago
 
 # Short description of your site
-description: Short description of the website site
+#description: Short description of the website site
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Me: "test"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
