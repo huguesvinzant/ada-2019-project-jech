@@ -1,0 +1,269 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+header{
+	color: white; 
+	background-color: cornflowerblue;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-bottom-left-radius: 10pt;
+	border-bottom-right-radius: 10pt;
+	text-align: center;
+	box-shadow: 0px 0px 80px 10px lightsteelblue;
+
+}
+.HeadContent{
+	display: inline-block;
+	width: 1000px;
+}
+.TweeterImage{
+	max-height: 45px;
+}
+.MainTitle{
+	font-family: "Avenir";
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+.BottomHeader{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	height:45px;
+	width:1000px;
+	display: inline-block;
+}
+.BottomLeftHeader{
+	float: left;
+}
+.BottomRightHeader{
+	float: right;
+}
+.HeadText{
+	text-align: center ;
+	font-family: "Avenir Next Ultra Light"; /*"Gill Sans", sans-serif;*/
+	font-size: 100%;
+}
+#Core{
+	/*margin-right: 10%;
+    margin-left : 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+	margin: 0 auto;
+    width: 1000px;
+    max-width: 1000px;
+    font-family: "Avenir Next Ultra Light" !important;/*Helvetica Neue !important;*/
+}
+h1{
+	text-align: center;
+	font-family: "Avenir Next Ultra Light";
+	font-size: 450%;
+}
+h2{
+	text-align: center;
+	font-family: "Avenir Next Ultra Light";
+	font-size: 140%;
+}
+h3{
+	text-align: left;
+	font-family: "Avenir Next Ultra Light";
+	font-size: 120%;
+}
+h5{
+	text-align: left;
+	font-family: "Avenir Next Ultra Light";
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+p{
+	text-align: justify;
+	font-family: "Avenir Next Ultra Light";
+	font-size: 100%;
+}
+ol{
+	text-align: left;
+	font-family: "Avenir Next Ultra Light";
+	font-size: 100%;
+}
+a:link{
+	color:black;
+}
+a:visited{
+	color: black;
+}
+a:hover{
+	background-color: lightgray;
+}
+object{
+
+}
+.Title{
+	text-align: center;
+	font-family: "Avenir Next Ultra Light";
+}
+.Right{
+	color: tomato;
+}
+.Left{
+	color: dodgerblue;
+}
+.bokeh_plot{
+	width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.colormapImg{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:400px;
+}
+
+/* Plot Tab */
+.tabPlot {
+  /*overflow: hidden;
+  border: 1px solid #ccc;*/
+  background-color: #f1f1f1;
+}
+.tabPlot button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 10px;
+  transition: 0.3s;
+  font-size: 12px;
+}
+.tabPlot button:hover {
+  background-color: #ddd;
+}
+.tabPlot button.active {
+  background-color: #ccc;
+}
+.tabPlotcontent {
+  display: none;
+  padding: 2px 12px;
+  /*border: 1px solid #ccc;*/
+  border-top: none;
+  }
+
+/* Topic Tab */
+.tabTopic {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tabTopic button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 13px;
+	transition: 0.3s;
+	font-size: 12px;
+}
+.tabTopic button:hover {
+  background-color: #ddd;
+}
+.tabTopic button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 2px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tabContentTopic{
+	font-weight: bold;
+}
+
+
+/* FOOTER */
+footer{
+	background-color: cornflowerblue;
+	box-shadow: inset 0px 50px 110px -50px lightsteelblue;
+	color: white; 
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 50px;
+	padding-left: 50px;
+	height: 80px;
+	border-top-left-radius: 10pt;
+	border-top-right-radius: 10pt;
+}
+.BottomLeftFooter{
+	float: left;
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.BottomCenterFooter{
+	float:left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+.BottomRightFooter{
+	float: right;
+	text-align: left;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.EPFLfooter{
+	float: left;
+}
+.DLABfooter{
+	float: right;
+	margin-left: 50px;
+}
+.EPFLlogo{
+	max-height: 60px;
+}
+.DLABlogo{
+	max-height: 60px;
+}
+.MailSec{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.Date{
+	text-align: center ;
+	font-family: "Avenir Next Ultra Light";
+	font-size: 100%;
+}
+.Names{
+	text-align: left ;
+	font-family: "Avenir Next Ultra Light";
+	font-style: bold;
+	font-size: 14pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.MailText{
+	font-family: "Avenir Next Ultra Light";
+	font-size: 12pt;
+	text-align: right;
+	margin-left:50px;
+}
