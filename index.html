@@ -26,3 +26,20 @@
           <h2 class="Title">Part1</h2>
 
           <p>Blablabla</p>
+
+          <div class="tabPlot">
+            <button id="defaultPlot" class="tablinks" autofocus onclick="openPlot(event, 'NbrTweetPlot')">Tweet Density</button>
+            <button class="tablinks" onclick="openPlot(event, 'NbrPeopleReached')">Number Of People Reached</button>
+          </div>
+
+          <div id='NbrTweetPlot' class="tabPlotcontent">
+            <object width="1000" height="425" align="middle" data="plots/TopHashthag_perday.html" class="bokeh_plot">
+                        Your browser doesn’t support the object tag.
+                    </object>
+          </div>
+
+          <div id='NbrPeopleReached' class="tabPlotcontent">
+            <object width="1000" height="425" align="middle" data="plots/People_Reached.html" class="bokeh_plot">
+                        Your browser doesn’t support the object tag.
+                    </object>
+          </div>
