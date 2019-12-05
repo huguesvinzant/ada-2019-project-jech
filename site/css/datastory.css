@@ -12,9 +12,7 @@ html {
     height: 100%;
 }
 header{
-	color: LightGray;
-  background: url("../img/chicago.jpg") 100% 100% no-repeat;
-  opacity: 0.5;
+  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("../img/chicago.jpg") 100% 100% no-repeat;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	padding-right: 50px;
@@ -33,10 +31,11 @@ header{
 	max-height: 45px;
 } */
 .MainTitle{
-	font-family: "Avenir";
+	font-family: Georgia, serif;
 	font-weight: bold;
 	margin-bottom: 0px;
   color: black;
+  opacity: 1;
 }
 .BottomHeader{
 	padding-top: 10px;
