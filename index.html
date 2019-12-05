@@ -43,10 +43,61 @@
 
             <p>Blablabla</p>
 
-            <!--<object width="500" height="500" align="left" data="site/img/density.html">
-              Your browser doesn’t support the object tag.
-            </object>
+            <div class="tabPlot">
+              <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot(event, 'inspection_results', 0, 2)">Inspection results</button>
+              <button class="tablinks" onclick="openPlot(event, 'inspection_type', 0, 2)">Inspection types</button>
+            </div>
 
-            <object width="500" height="500" align="right" data="site/img/map_evolution_inspection_full.html">
-              Your browser doesn’t support the object tag.
-            </object>
+            <div id='inspection_results' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/inspection_results_time.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
+            <div id='inspection_type' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/inspection_type_time.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
+            <h3 class="Title">What about food chains?</h3>
+
+            <div class="tabPlot">
+              <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot(event, 'chain_results', 2, 2)">Chain results</button>
+              <button class="tablinks" onclick="openPlot(event, 'chain_evol', 2, 2)">Chain evolution</button>
+            </div>
+
+            <div id='chain_results' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/chain_results.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
+            <div id='chain_evol' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/chain_evol.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
+            <script>
+
+            var defaultplots;
+            defaultplots = document.getElementsByName('defaultPlot')
+            for (i = 0; i < defaultplots.length; i++) {
+              defaultplots[i].click();
+            }
+
+            function openPlot(evt, PlotName, start, n) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabPlotcontent");
+              for (i = start; i < start+n; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = start; i < start+n; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active", "");
+              }
+              document.getElementById(PlotName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>
