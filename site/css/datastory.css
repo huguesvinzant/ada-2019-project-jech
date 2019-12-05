@@ -12,8 +12,9 @@ html {
     height: 100%;
 }
 header{
-	color: white; 
-	background-color: cornflowerblue;
+	color: LightGray;
+  background: url("../img/chicago.jpg") 100% 100% no-repeat;
+  opacity: 0.5;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	padding-right: 50px;
@@ -21,20 +22,21 @@ header{
 	border-bottom-left-radius: 10pt;
 	border-bottom-right-radius: 10pt;
 	text-align: center;
-	box-shadow: 0px 0px 80px 10px lightsteelblue;
-
+	box-shadow: 0px 0px 80px 10px LightGray;
 }
 .HeadContent{
 	display: inline-block;
 	width: 1000px;
 }
+/*
 .TweeterImage{
 	max-height: 45px;
-}
+} */
 .MainTitle{
 	font-family: "Avenir";
 	font-weight: bold;
 	margin-bottom: 0px;
+  color: black;
 }
 .BottomHeader{
 	padding-top: 10px;
@@ -53,7 +55,7 @@ header{
 }
 .HeadText{
 	text-align: center ;
-	font-family: "Avenir Next Ultra Light"; /*"Gill Sans", sans-serif;*/
+	font-family: Georgia, serif; /*"Gill Sans", sans-serif;*/
 	font-size: 100%;
 }
 #Core{
@@ -66,37 +68,37 @@ header{
 	margin: 0 auto;
     width: 1000px;
     max-width: 1000px;
-    font-family: "Avenir Next Ultra Light" !important;/*Helvetica Neue !important;*/
+    font-family: Georgia, serif !important;/*Helvetica Neue !important;*/
 }
 h1{
 	text-align: center;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	font-size: 450%;
 }
 h2{
 	text-align: center;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	font-size: 140%;
 }
 h3{
 	text-align: left;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	font-size: 120%;
 }
 h5{
 	text-align: left;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 p{
 	text-align: justify;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	font-size: 100%;
 }
 ol{
 	text-align: left;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	font-size: 100%;
 }
 a:link{
@@ -113,7 +115,7 @@ object{
 }
 .Title{
 	text-align: center;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 }
 .Right{
 	color: tomato;
@@ -199,7 +201,7 @@ img.colormapImg{
 footer{
 	background-color: cornflowerblue;
 	box-shadow: inset 0px 50px 110px -50px lightsteelblue;
-	color: white; 
+	color: white;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	padding-right: 50px;
@@ -250,19 +252,19 @@ footer{
 }
 .Date{
 	text-align: center ;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	font-size: 100%;
 }
 .Names{
 	text-align: left ;
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	font-style: bold;
 	font-size: 14pt;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
 .MailText{
-	font-family: "Avenir Next Ultra Light";
+	font-family: Georgia, serif;
 	font-size: 12pt;
 	text-align: right;
 	margin-left:50px;
