@@ -87,6 +87,9 @@
               defaultplots[i].click();
             }
 
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
             function openPlot(evt, PlotName, start, n) {
               var i, tabcontent, tablinks;
               tabcontent = document.getElementsByClassName("tabPlotcontent");
@@ -101,32 +104,33 @@
               evt.currentTarget.className += " active";
             }
             </script>
+
           </div>
 
           <div class="Part3">
             <h2 class="Title">Yelp ratings</h2>
 
-              <p>Blablabla</p>
+            <p>Blablabla</p>
 
           </div>
 
           <div class="Part4">
             <h2 class="Title">Food Categories</h2>
 
-              <p>Blablabla</p>
+            <p>Blablabla</p>
 
           </div>
 
           <div class="Part5">
             <h2 class="Title">Crimes</h2>
 
-              <p>Blablabla</p>
+            <p>Blablabla</p>
 
           </div>
 
           <div class="Part5">
             <h2 class="Title">Final</h2>
 
-              <p>Blablabla</p>
+            <p>Blablabla</p>
 
           </div>
