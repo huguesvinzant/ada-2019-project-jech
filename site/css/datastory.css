@@ -141,20 +141,24 @@ img.colormapImg{
   background-color: #f1f1f1;
 }
 .tabPlot button {
-  background-color: inherit;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
   float: left;
-  border: none;
   outline: none;
   cursor: pointer;
+  width: 50%;
   padding: 14px 10px;
   transition: 0.3s;
   font-size: 12px;
 }
 .tabPlot button:hover {
-  background-color: #ddd;
+  background-color: #555555;
+  color: white;
 }
 .tabPlot button.active {
-  background-color: #ccc;
+  background-color: #555555;
+  color: white;
 }
 .tabPlotcontent {
   display: none;
