@@ -12,24 +12,22 @@ html {
     height: 100%;
 }
 header{
-  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url("../img/chicago.jpg") 100% 100% no-repeat;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-right: 50px;
-	padding-left: 50px;
+  background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url('../img/chicago.jpg') 100% 100%;
+  padding: 50px 20px;
+  fontSize: 15px;
 	border-bottom-left-radius: 10pt;
 	border-bottom-right-radius: 10pt;
 	text-align: center;
 	box-shadow: 0px 0px 80px 10px LightGray;
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
 }
 .HeadContent{
 	display: inline-block;
 	width: 1000px;
 }
-/*
-.TweeterImage{
-	max-height: 45px;
-} */
+
 .MainTitle{
 	font-family: Georgia, serif;
 	font-weight: bold;
@@ -209,7 +207,7 @@ img.colormapImg{
     height: auto;
     overflow: hidden;
     margin-top: 6px;
-  }  
+  }
 .range__opt:before {
       content: '';
       display: block;
