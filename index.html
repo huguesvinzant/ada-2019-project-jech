@@ -44,8 +44,8 @@
             <p>Blablabla</p>
 
             <div class="tabPlot">
-              <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot(event, 'inspection_results', 0, 2)">Inspection results</button>
-              <button class="tablinks" onclick="openPlot(event, 'inspection_type', 0, 2)">Inspection types</button>
+              <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot('inspection_results', 0, 2)">Inspection results</button>
+              <button class="tablinks" onclick="openPlot('inspection_type', 0, 2)">Inspection types</button>
             </div>
 
             <div id='inspection_results' class="tabPlotcontent">
@@ -63,8 +63,8 @@
             <h3 class="Title">What about food chains?</h3>
 
             <div class="tabPlot">
-              <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot(event, 'chain_results', 2, 2)">Chain results</button>
-              <button class="tablinks" onclick="openPlot(event, 'chain_evol', 2, 2)">Chain evolution</button>
+              <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot('chain_results', 2, 2)">Chain results</button>
+              <button class="tablinks" onclick="openPlot('chain_evol', 2, 2)">Chain evolution</button>
             </div>
 
             <div id='chain_results' class="tabPlotcontent">
@@ -78,32 +78,6 @@
                 Your browser doesn’t support the object tag.
               </object>
             </div>
-
-            <script>
-
-            var defaultplots;
-            defaultplots = document.getElementsByName('defaultPlot')
-            for (i = 0; i < defaultplots.length; i++) {
-              defaultplots[i].click();
-            }
-
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-
-            function openPlot(evt, PlotName, start, n) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabPlotcontent");
-              for (i = start; i < start+n; i++) {
-                tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablinks");
-              for (i = start; i < start+n; i++) {
-                tablinks[i].className = tablinks[i].className.replace("active", "");
-              }
-              document.getElementById(PlotName).style.display = "block";
-              evt.currentTarget.className += " active";
-            }
-            </script>
 
           </div>
 
@@ -143,4 +117,92 @@
 
             <p>Blablabla</p>
 
+            <div class="slidecontainer">
+                <input type="range" list="number" min="0" max="4" value="2" class="slider" id="myRange">
+                <datalist class="range__list" id="number">
+                  <option class="range__opt">0</option>
+                  <option class="range__opt">1</option>
+                  <option class="range__opt">2</option>
+                  <option class="range__opt">3</option>
+                  <option class="range__opt">4</option>
+                </datalist>
+                <p>Minimum Yelp grade: <span id="demo"></span></p>
+            </div>
+
+            <div id='final_0' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/final_0.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
+            <div id='final_1' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/final_1.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
+            <div id='final_2' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/final_2.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
+            <div id='final_3' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/final_3.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
+            <div id='final_4' class="tabPlotcontent">
+              <object width="1000" height="500" align="middle" data="site/img/final_4.html">
+                Your browser doesn’t support the object tag.
+              </object>
+            </div>
+
           </div>
+
+
+          <script>
+
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+          var defaultplots;
+          defaultplots = document.getElementsByName('defaultPlot')
+          for (i = 0; i < defaultplots.length; i++) {
+            defaultplots[i].click();
+          }
+
+          var slider = document.getElementById("myRange");
+          var output = document.getElementById("demo");
+          output.innerHTML = slider.value;
+
+          slider.oninput = function() {
+            var name = "final_".concat(this.value);
+            output.innerHTML = this.value;
+            openPlot(name, 4, 5);
+          }
+
+          function openPlot(PlotName, start, n) {
+            var i, j, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabPlotcontent");
+            for (i = start; i < start+n; i++) {
+              if (tabcontent[i].id == PlotName) {
+                tabcontent[i].style.display = "block";
+                j = i;
+              } else {
+                tabcontent[i].style.display = "none";
+              }
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = start; i < start+n; i++) {
+              if (i == j) {
+                tablinks[i].className += " active";
+              } else {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+            }
+            //document.getElementById(PlotName).style.display = "block";
+            //evt.currentTarget.className += " active";
+          }
+          </script>
