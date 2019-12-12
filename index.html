@@ -7,6 +7,10 @@
 
 <body>
 
+  <div id="overlay">
+    <img src="site/img/load.gif" style="width:200px;height:200px;margin:200px 550px;">
+  </div>
+
     <!-- HEADER OF THE DATASTORY -->
     <header id="header">
       <div class="HeadContent" id="header_cont">
@@ -205,6 +209,7 @@
     window.onload = function() {
       window.scroll(0,0)
       document.body.style.position = "relative";
+      document.getElementById("overlay").style.display = "none";
     }
 
     var defaultplots;
