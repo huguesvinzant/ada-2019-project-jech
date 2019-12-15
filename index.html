@@ -6,218 +6,266 @@
 </head>
 
 <body>
-  <!-- HEADER OF THE DATASTORY -->
-  <header id="header">
-    <div class="HeadContent" id="header_cont">
-      <h1 class="MainTitle"> A short guide on where to safely eat delicious food in Chicago <br></h1>
+
+  <div id="overlay">
+    <img src="site/img/load.gif" style="width:200px;height:200px;margin:200px 550px;">
+  </div>
+
+    <!-- HEADER OF THE DATASTORY -->
+    <header id="header">
+      <div class="HeadContent" id="header_cont">
+        <h1 class="MainTitle"> A short guide on where to safely eat delicious food in Chicago <br></h1>
       </div>
     </header>
-
-    <!-- <div id="header">A short guide on where to safely eat delicious food in Chicago</div> -->
 
     <!-- DATASTORY -->
     <div id="Core">
       <!-- INTRODUCTION OF THE DATASTORY -->
-      <div class="Intro" style="margin-top:370px">
-        <p> Whether being a simple tourist or long-standing inhabitant of a big city, everybody cares about eating delicious food while staying safe from both food poisoning or the like and neighborhood criminality. In this project, our goal is to offer a better overall understanding of Chicago's food places by combining insights from three different datasets. After an analysis of the evolution of food safety since 2010, we will aim to explore the correlation of inspection data on food facilities with Yelp restaurant ratings to see whether the ratings somehow reflect the outcomes of the authority’s controls. In order to provide a better overview of safety in the city, we will also investigate the geographical distribution of crime rates and superimpose these results to the food safety and Yelp rating results. Accordingly, the final project would entitle the reader to knowledge on general public and food safety, thus ensuring a better experience within the city and its neighbourhoods, for tourists or inhabitants.<p>
-        </div>
+      <div class="Intro">
+        <p> Looking for a place to eat in Chicago? Want to avoid food poisoning and neighborhood criminality? This website is made for you! Whether you are a simple tourist or a long-standing inhabitant of Chicago, this website contains interactive tools to help you make your restaurant choice. </p>
+      </div>
 
-        <!-- General -->
-        <div class="Part1">
-          <h2 class="Title">Where is the food in Chicago?</h2>
+      <!-- General -->
+      <div class="Part1">
+        <h2 class="Title">Where is the food in Chicago?</h2>
 
-          <p>Blablabla</p>
+        <p> Chicago is the third largest city in the US, counting about 2.7 million inhabitants. It is surrounded by a large metropolitan area with a total of 10 million people, so largely surpassing the whole population of Switzerland. In addition, the Chicagoans, as the residents are called, welcome an impressive 58 million tourists each year that are willing to visit the windy city located on the shores of Lake Michigan. It is not surprising that such a megacity also offers an incredibly varied and rich food scene with cuisine styles from every corner of the world. An in-depth analysis of Yelp reviews and food inspection results from the Chicago Department of Public Health’s Food Protection Program will help you make your food choice! This analysis takes into account xxx food establishments in the city. Since Chicago has 77 different neighbourhoods, also known as community areas, you may also want to choose your destination based on the analysis of crime rates in each of these areas. Certain destinations are better suited for families, and allow a better feeling of safety.
+        </p>
 
-          <object width="1000" height="500" align="middle" data="site/img/density.html">
+        <p> To get a first feel for the food options in the city, it is valuable to know where the big food hubs are. On the interactive map, you can quickly identify the areas that will offer the greatest selection of restaurants. By zooming in, you can see in greater detail the distribution of restaurants in a specific area. In this plot you can specifically see that the highest restaurant density is located around the Chicago Loop, the heart of the city. </p>
+
+        <object width="1000" height="500" align="middle" data="site/img/density.html">
+          Your browser doesn’t support the object tag.
+        </object>
+      </div>
+
+      <!-- History -->
+      <div class="Part2">
+        <h2 class="Title">Food Inspection evolution</h2>
+
+        <p> Regular food inspection procedures by the local authorities are key to ensure the safety of the clients. Chicago Department of Public Health has an elaborate procedure in place that entails the science-based inspection of all food establishments in order to protect public health. Any establishment that sells food or drinks is subject to these inspections: this ranges from restaurants, bakeries, to hospitals and schools, just to name a few. However, for the sake of this analysis, only establishments that prepare, and serve food/drinks as fundamental activity were included in this analysis (thus excluding schools, grocery stores, etc.). </p>
+
+        <p> Establishments have a varying risk to public health, and thus inspections occur more or less frequently depending on their risk category. The risk category of an establishment will depend on the selling of risky foods, compliance history of the establishment, and the facility type. Risk 1 establishments are inspected at least twice per calendar year (accounting for 73% of establishments); Risk 2 establishments are inspected at least once per calendar year (23%); and Risk 3 establishments are inspected every two years (3.7%). </p>
+
+        <p> By the means of a Health Code Violations, which is a list containing dozens of potential health hazards present in a food establishment, the inspection can lead to a pass, pass with conditions, or fail result.
+          The Health Code Violations before the 1st of July 2018 were categorized into critical, serious, and minor violations:
+          <ul>
+            <li>Example of a serious violation: “Dishes and other utensils shall be rinsed or scraped to remove gross food particles and other soil before washing.” </li>
+            <li> Example of a critical violation: “All food shall be from sources approved by health authorities and safe for human consumption.”
+            </li>
+            <li> Example of a minor violation: “Soiled and clean linens, coats, and aprons shall be properly stored.” </li>
+          </ul>
+          Thus, if an inspection only led to the discovery of minor violations or none, the result would be a pass. However, if there were serious or critical violations, but these were corrected during inspection, this leads to a pass with conditions. Otherwise, this leads to the failure of the inspection, which must be corrected for as desired by the Department of Public Health.
+          As of the 1st of July 2018, the number of violations on the list increased from 45 to 63 to better account for food safety. </p>
+
+
+          <object width="1000" height="500" align="middle" data="site/img/map_evolution_inspection_full.html">
             Your browser doesn’t support the object tag.
           </object>
 
-          <!-- History -->
-          <div class="Part2">
-            <h2 class="Title">Food Inspection evolution</h2>
+          <p> If you paid close attention, you might have detected the distinct change in inspection scores happening in summer 2018. This is due to a change in the Health Code Violations. This change led to an increase in the number of possible violations of an establishment during an inspection. This change especially increased the number of critical/serious violations, and thus the number of inspection results with pass with conditions increased. </p>
 
-            <p>Blablabla</p>
+          <p> Evidently, such an animated plot does not give a clear quantitative idea about the changes in the results and inspection types that occured over the past 10 years. When inspecting the results, we can again see a clear change happening after 2017. Clicking on the legend items on the right will allow you to inspect the individual changes in greater detail. </p>
 
-            <object width="1000" height="500" align="middle" data="site/img/map_evolution_inspection_full.html">
+          <p> Inspections can be of several types, for instance:
+            <ul>
+              <li>‘Canvass’: a regular inspection that is proportional to the risk category of the establishment. </li>
+              <li>‘Complaint’/’Suspect food poisoning’: an inspection done in response to a complaint against the establishment by a client. </li>
+              <li>‘Re-inspections’ types take place for most of the complaint inspections. </li>
+              <li>Other types such as ‘license’ (the establishment getting its license) or ‘consultation’ (the opening of the establishment) also occur. </li>
+            </ul>
+            Here the plot shows the evolution of the ratio of inspection types per year.
+          </p>
+
+          <div class="tabPlot">
+            <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot('inspection_results', 0, 2, true)">Inspection results</button>
+            <button class="tablinks" onclick="openPlot('inspection_type', 0, 2, true)">Inspection types</button>
+          </div>
+
+          <div id='inspection_results' class="tabPlotcontent">
+            <object width="1000" height="500" align="middle" data="site/img/inspection_results_time.html">
               Your browser doesn’t support the object tag.
             </object>
-
-            <p>Blablabla</p>
-
-            <div class="tabPlot">
-              <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot('inspection_results', 0, 2)">Inspection results</button>
-              <button class="tablinks" onclick="openPlot('inspection_type', 0, 2)">Inspection types</button>
-            </div>
-
-            <div id='inspection_results' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/inspection_results_time.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
-            <div id='inspection_type' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/inspection_type_time.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
-            <h3 class="Title">What about food chains?</h3>
-
-            <div class="tabPlot">
-              <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot('chain_results', 2, 2)">Chain results</button>
-              <button class="tablinks" onclick="openPlot('chain_evol', 2, 2)">Chain evolution</button>
-            </div>
-
-            <div id='chain_results' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/chain_results.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
-            <div id='chain_evol' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/chain_evol.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
           </div>
 
-          <div class="Part3">
-            <h2 class="Title">Yelp ratings</h2>
-
-            <p>Blablabla</p>
-
-          </div>
-
-          <div class="Part4">
-            <h2 class="Title">Food Categories</h2>
-
-            <p>Blablabla</p>
-
-          </div>
-
-          <div class="Part5">
-            <h2 class="Title">Crimes</h2>
-
-            <p>Blablabla</p>
-
-            <object width="1000" height="500" align="middle" data="site/img/area_crimedensity2019.html">
+          <div id='inspection_type' class="tabPlotcontent">
+            <object width="1000" height="500" align="middle" data="site/img/inspection_type_time.html">
               Your browser doesn’t support the object tag.
             </object>
+          </div>
 
-            <p>Blablabla</p>
+          <h3 class="Title">What about food chains?</h3>
 
-            <object width="1000" height="500" align="middle" data="site/img/crimedensity_evolution.html">
+          <p> When thinking about the food America offers, many Europeans will think of large fast food chains such as Burger King, McDonald’s or Starbucks. Analyzing the nine largest food chains established in Chicago, we can see that not all chains treat the food safety with the same degree of seriousness. Over the last 10 years, Starbucks emerges as the winner by passing 78% of its inspections without any serious or critical violations. However, since Starbucks is mainly a coffee chain and does not offer freshly cooked food onsite, this is not a big surprise. The award for being the least hygienic food chain in Chicago goes to Papa John’s Pizza with a staggering 3 in 10 failed inspections. Looking at the normalized cumulative failure rate over the years, some very interesting patterns emerge. Again, Papa John’s Pizza, which opened its first businesses in 2010 in Chicago, performs the worst. Other well-established chains such as McDonald’s or Subway have quite stable inspection outcomes over the years, which can be attributed to their highly standardized procedures for each branch.
+          </p>
+
+          <div class="tabPlot">
+            <button name="defaultPlot" class="tablinks" autofocus onclick="openPlot('chain_results', 2, 2, true)">Chain results</button>
+            <button class="tablinks" onclick="openPlot('chain_evol', 2, 2, true)">Chain evolution</button>
+          </div>
+
+          <div id='chain_results' class="tabPlotcontent">
+            <p> <br> <br> </p>
+            <p> Hello je suis un super plot </p>
+            <object width="1000" height="500" align="middle" data="site/img/chain_results.html">
               Your browser doesn’t support the object tag.
             </object>
-
           </div>
 
-          <div class="Part5">
-            <h2 class="Title">Final</h2>
-
-            <p>Blablabla</p>
-
-            <div class="slidecontainer">
-                <input type="range" list="number" min="0" max="4" value="2" class="slider" id="myRange">
-                <datalist class="range__list" id="number">
-                  <option class="range__opt">0</option>
-                  <option class="range__opt">1</option>
-                  <option class="range__opt">2</option>
-                  <option class="range__opt">3</option>
-                  <option class="range__opt">4</option>
-                </datalist>
-                <p>Minimum Yelp grade: <span id="demo"></span></p>
-            </div>
-
-            <div id='final_0' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/final_0.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
-            <div id='final_1' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/final_1.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
-            <div id='final_2' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/final_2.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
-            <div id='final_3' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/final_3.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
-            <div id='final_4' class="tabPlotcontent">
-              <object width="1000" height="500" align="middle" data="site/img/final_4.html">
-                Your browser doesn’t support the object tag.
-              </object>
-            </div>
-
+          <div id='chain_evol' class="tabPlotcontent">
+            <object width="1000" height="500" align="middle" data="site/img/chain_evol.html">
+              Your browser doesn’t support the object tag.
+            </object>
           </div>
 
+        </div>
 
-          <script>
+        <div class="Part3">
+          <h2 class="Title">Yelp ratings</h2>
 
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          <p>Blablabla</p>
 
-          var defaultplots;
-          defaultplots = document.getElementsByName('defaultPlot')
-          for (i = 0; i < defaultplots.length; i++) {
-            defaultplots[i].click();
+          <object width="1000" height="500" align="middle" data="site/img/dual.html">
+            Your browser doesn’t support the object tag.
+          </object>
+
+        </div>
+
+        <div class="Part4">
+          <h2 class="Title">Food Categories</h2>
+
+          <p>Blablabla</p>
+
+        </div>
+
+        <div class="Part5">
+          <h2 class="Title">Crimes</h2>
+
+          <p>Blablabla</p>
+
+          <object width="1000" height="500" align="middle" data="site/img/area_crimedensity2019.html">
+            Your browser doesn’t support the object tag.
+          </object>
+
+          <p>Blablabla</p>
+
+          <object width="1000" height="500" align="middle" data="site/img/crimedensity_evolution.html">
+            Your browser doesn’t support the object tag.
+          </object>
+
+        </div>
+
+        <div class="Part5">
+          <h2 class="Title">Final</h2>
+
+          <p>Blablabla</p>
+
+          <div class="slidecontainer">
+            <input type="range" list="number" min="1" max="4" value="3" class="slider" id="myRange">
+            <datalist class="range__list" id="number">
+              <option class="range__opt">1</option>
+              <option class="range__opt">2</option>
+              <option class="range__opt">3</option>
+              <option class="range__opt">4</option>
+            </datalist>
+            <p>Minimum Yelp grade: <span id="demo"></span></p>
+          </div>
+
+          <div id='final_1' class="tabPlotcontent">
+            <object width="1000" height="500" align="middle" data="site/img/final_1.html">
+              Your browser doesn’t support the object tag.
+            </object>
+          </div>
+
+          <div id='final_2' class="tabPlotcontent">
+            <object width="1000" height="500" align="middle" data="site/img/final_2.html">
+              Your browser doesn’t support the object tag.
+            </object>
+          </div>
+
+          <div id='final_3' class="tabPlotcontent">
+            <object width="1000" height="500" align="middle" data="site/img/final_3.html">
+              Your browser doesn’t support the object tag.
+            </object>
+          </div>
+
+          <div id='final_4' class="tabPlotcontent">
+            <object width="1000" height="500" align="middle" data="site/img/final_4.html">
+              Your browser doesn’t support the object tag.
+            </object>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER OF THE DATASTORY -->
+      <footer id="footer">
+        <div class="FootContent" id="footer_cont">
+          <h1 class="MainTitleFoot"> Footer <br></h1>
+        </div>
+      </footer>
+
+    <script>
+
+    window.onload = function() {
+      window.scroll(0,0)
+      document.body.style.position = "relative";
+      document.getElementById("overlay").style.display = "none";
+    }
+
+    var defaultplots;
+    defaultplots = document.getElementsByName('defaultPlot');
+    for (var i = 0; i < defaultplots.length; i++) {
+      defaultplots[i].click();
+    }
+
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    openPlot("final_".concat(slider.value), 4, 4, false);
+
+    slider.onchange = function() {
+      var name = "final_".concat(this.value);
+      output.innerHTML = this.value;
+      openPlot(name, 4, 4, false);
+    }
+
+    function openPlot(PlotName, start, n, flag) {
+      var j, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabPlotcontent");
+      for (var i = start; i < start+n; i++) {
+        if (tabcontent[i].id == PlotName) {
+          tabcontent[i].style.display = "block";
+          j = i;
+        } else {
+          tabcontent[i].style.display = "none";
+        }
+      }
+      if(flag) {
+        tablinks = document.getElementsByClassName("tablinks");
+        for (var i = start; i < start+n; i++) {
+          if (i == j) {
+            tablinks[i].className += " active";
+          } else {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
+        }
+      }
+    }
 
-          var slider = document.getElementById("myRange");
-          var output = document.getElementById("demo");
-          output.innerHTML = slider.value;
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
 
-          slider.oninput = function() {
-            var name = "final_".concat(this.value);
-            output.innerHTML = this.value;
-            openPlot(name, 4, 5);
-          }
+    function scrollFunction() {
 
-          function openPlot(PlotName, start, n) {
-            var i, j, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabPlotcontent");
-            for (i = start; i < start+n; i++) {
-              if (tabcontent[i].id == PlotName) {
-                tabcontent[i].style.display = "block";
-                j = i;
-              } else {
-                tabcontent[i].style.display = "none";
-              }
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = start; i < start+n; i++) {
-              if (i == j) {
-                tablinks[i].className += " active";
-              } else {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-            }
-          }
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.fontSize = "5px";
+        document.getElementById("header").style.background = "linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('site/img/chicago.jpg')";
+      } else {
+        document.getElementById("header").style.fontSize = "15px";
+        document.getElementById("header").style.background = "linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url('site/img/chicago.jpg') 100% 100%";
+      }
+    }
 
-          // When the user scrolls down 50px from the top of the document, resize the header's font size
-          window.onscroll = function() {scrollFunction()};
-
-          function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-              document.getElementById("header").style.padding = "0px 10px 20px";
-              document.getElementById("header").style.fontSize = "6px";
-              document.getElementById("header").style.background = "linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('site/img/chicago.jpg')"
-            } else {
-              document.getElementById("header").style.padding = "50px 20px";
-              document.getElementById("header").style.fontSize = "15px";
-              document.getElementById("header").style.background = "linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.4)), url('site/img/chicago.jpg') 100% 100%";
-            }
-          }
-
-          </script>
+    </script>
+  </body>
+  </html>
