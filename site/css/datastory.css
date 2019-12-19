@@ -43,16 +43,13 @@ header{
   opacity: 1;
 }
 #Core{
-  /*margin-right: 10%;
-  margin-left : 10%;
-  margin-top: 50px;
-  margin-bottom: 50px;*/
   padding-top: 350px;
   padding-bottom: 50px;
   margin: 0 auto;
   width: 1000px;
   max-width: 1000px;
   font-family: Georgia, serif;
+  line-height: 1.6;
 }
 h1{
   text-align: center;
@@ -95,11 +92,20 @@ a:hover{
   background-color: lightgray;
 }
 object{
-
 }
 .Title{
   text-align: center;
   font-family: Georgia, serif;
+}
+#leftbox1 {
+  float:left;
+  width: 70%;
+  height: 500px;
+}
+#rightbox1 {
+  float:right;
+  width: 30%;
+  height: 500px;
 }
 
 /* Plot Tab */
