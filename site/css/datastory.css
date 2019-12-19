@@ -125,14 +125,14 @@ object{
   text-align: center;
   font-family: Georgia, serif;
 }
-#leftbox1 {
+#leftbox {
   float:left;
-  width: 70%;
+  width: 50%;
   height: 500px;
 }
-#rightbox1 {
+#rightbox {
   float:right;
-  width: 30%;
+  width: 50%;
   height: 500px;
 }
 
