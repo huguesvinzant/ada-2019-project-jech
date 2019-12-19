@@ -51,6 +51,16 @@ header{
   font-family: Georgia, serif;
   line-height: 1.6;
 }
+.Intro {
+  background-color: rgba(0,0,0,0.2);
+  border-top-left-radius: 15pt;
+  border-top-right-radius: 15pt;
+  border-bottom-left-radius: 15pt;
+  border-bottom-right-radius: 15pt;
+  font-weight: bold;
+  font-size: 125%;
+  text-align: center;
+}
 h1{
   text-align: center;
   font-family: Georgia, serif;
@@ -124,10 +134,11 @@ object{
   width: 50%;
   padding: 14px 10px;
   transition: 0.3s;
-  font-size: 12px;
+  font-size: 20px;
 }
 .tabPlot button:hover {
-  background-color: #555555;
+  background-color: #888888;
+  border: 2px solid #888888;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   color: white;
 }
@@ -138,7 +149,6 @@ object{
 .tabPlotcontent {
   display: none;
   padding: 2px 12px;
-  /*border: 1px solid #ccc;*/
   border-top: none;
 }
 
