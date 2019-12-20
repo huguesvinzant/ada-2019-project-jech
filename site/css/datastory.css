@@ -54,14 +54,14 @@ header{
 .Intro {
   margin: auto;
   width: 100%;
-  height: 100%;
+  height: 90%;
   background-color: #B3DDF2;
   border-top-left-radius: 15pt;
   border-top-right-radius: 15pt;
   border-bottom-left-radius: 15pt;
   border-bottom-right-radius: 15pt;
   font-weight: bold;
-  font-size: 100%;
+  font-size: 110%;
   text-align: center;
 }
 #leftboxIntro {
@@ -72,7 +72,7 @@ header{
 #middleboxIntro {
   float:left;
   width: 80%;
-  height: 100;
+  height: 200;
 }
 #rightboxIntro {
   float:right;
@@ -111,13 +111,14 @@ ol{
   font-size: 100%;
 }
 a:link{
-  color:black;
+  color: white;
 }
 a:visited{
-  color: black;
+  color: LightGray;
 }
 a:hover{
-  background-color: lightgray;
+  background-color: white;
+  color: black;
 }
 object{
 }
@@ -231,14 +232,27 @@ footer{
   text-align: center;
   box-shadow: 0px 0px 80px 10px LightGray;
   width: 100%;
-}
-.FootContent{
-  display: inline-block;
-  width: 1000px;
-}
-.MainTitleFoot{
   font-family: Georgia, serif;
-  font-weight: bold;
   color: white;
-  opacity: 1;
+  display: inline-block;
+  font-style: bold;
+	font-size: 14pt;
+}
+.BottomLeftFooter{
+	float: left;
+  width: 20%;
+	text-align: center;
+  padding-top: 20px;
+}
+.BottomCenterFooter{
+	float:left;
+  width: 60%;
+  text-align: center;
+  padding-top: 20px;
+}
+.BottomRightFooter{
+	float: right;
+  width: 20%;
+  text-align: center;
+	padding-top: 20px;
 }
