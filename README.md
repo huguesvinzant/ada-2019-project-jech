@@ -107,7 +107,7 @@ Working on three datasets simultaneously has proven to be quite a demanding and 
 
 We will all together design the poster and prepare the 3-minute presentation.
 
-# Questions for TAa
+# Questions for TAs
 - Is there a way to automatically launch the Yelp Fusion API everyday? As we are limited to 5’000 requests per day and our CFI dataset contains inspections of roughly 30’000 different food establishments, this would mean that we need at least 6 days to obtain all ratings.
 - When doing a comparative analysis, how can we best deal with the fact that all three measures (Yelp rating, sanitation risk level and crime rate) fluctuate and may change over time? Would it be a good approach to look at the averaged data over the last two years (since this corresponds to the maximum interval for food inspections) to analyse whether there is any correlation between the measures?
 
