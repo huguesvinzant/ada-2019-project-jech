@@ -1,6 +1,6 @@
 # A short guide on where to safely eat delicious food in Chicago
 
-Supporting notebook with extensive analysis: `Descriptive Analysis.ipynb`  
+Supporting notebook with extensive analysis: `Descriptive Analysis.ipynb` with access to the raw and cleaned datasets [here](https://drive.google.com/drive/folders/1DY2rESGgrdFOardQYvo69dUzEoMl8KzY?usp=sharing)
 Link to data story: https://huguesvinzant.github.io/ada-2019-project-jech/
 
 # Abstract
