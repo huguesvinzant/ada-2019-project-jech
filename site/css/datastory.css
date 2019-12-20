@@ -103,7 +103,7 @@ h5{
 p{
   text-align: justify;
   font-family: Georgia, serif;
-  font-size: 100%;
+  font-size: 16px;
 }
 ol{
   text-align: left;
@@ -223,8 +223,8 @@ object{
 
 /* FOOTER */
 footer{
-  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/chicago_night.jpg') 100% 100% no-repeat;
-  background-position: center;
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/chicago_snow.jpg') 100% 100% no-repeat;
+  background-position: 50% 60%;
   fontSize: 15px;
   border-top-left-radius: 10pt;
   border-top-right-radius: 10pt;
