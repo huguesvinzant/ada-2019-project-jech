@@ -62,6 +62,7 @@ Descriptive analysis of:
 - Finalize notebook with descriptive analysis to hand in
 ---
 
+**Milestone 2 - Review:**
 Working on three datasets simultaneously has proven to be quite a demanding and non-trivial task. The two datasets from the Chicago Data Portal required some data cleaning and wrangling to make it ready for our analyses but have proven to suit well our project needs. The Yelp reviews are extremely challenging to obtain and it has taken us several attempts before we managed to properly scrape the data. But we believe it is worth the effort as this will truly add a valuable element to our analysis. Our initial idea depicted in the README still fits with the current state of our project and we believe it is possible to attain our goals. In the next weeks, we will intensively work on performing correlation analyses among the three datasets to understand the underlying patterns. As an ultimate goal, we also aim to build some kind of recommender system that allows a tourist to get a tailored recommendation on where to eat deliciously, while staying safe in Chicago, based on their food preferences.
 
 ---
