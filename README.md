@@ -1,7 +1,7 @@
 # A short guide on where to safely eat delicious food in Chicago
 
 Supporting notebook `Descriptive Analysis.ipynb` with access to the raw and cleaned datasets [here](https://drive.google.com/drive/folders/1DY2rESGgrdFOardQYvo69dUzEoMl8KzY?usp=sharing) (requires an EPFL account)  
-Link to data story: https://huguesvinzant.github.io/ada-2019-project-jech/
+Link to data story: https://huguesvinzant.github.io/ada-2019-project-jech/ (optimized for Google Chrome)
 
 # Abstract
 Whether being a simple tourist or long-standing inhabitant of a big city, everybody cares about eating delicious food while staying safe from both food poisoning or the like and neighborhood criminality. In this project, our goal is to offer a better overall understanding of Chicago's food places by combining insights from three different datasets. After an analysis of the evolution of food safety since 2010, we will aim to explore the correlation of inspection data on food facilities with Yelp restaurant ratings to see whether the ratings somehow reflect the outcomes of the authority’s controls. In order to provide a better overview of safety in the city, we will also investigate the geographical distribution of crime rates and superimpose these results to the food safety and Yelp rating results. Accordingly, the final project would entitle the reader to knowledge on general public and food safety, thus ensuring a better experience within the city and its neighbourhoods, for tourists or inhabitants.
