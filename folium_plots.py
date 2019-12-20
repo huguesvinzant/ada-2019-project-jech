@@ -321,9 +321,9 @@ def final_plot(data, geo_json_chicago_area_crime, list_category, n_areas):
                 ).add_to(g)
             m.add_child(g) 
 
-            #Minimap
-            minimap = MiniMap(toggle_display=True, position='bottomleft')
-            m.add_child(minimap)
+        #Minimap
+        minimap = MiniMap(toggle_display=True, position='bottomleft')
+        m.add_child(minimap)
 
             #Full screem --> Doesn't work on the website
             #plugins.Fullscreen(
