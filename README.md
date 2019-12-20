@@ -1,6 +1,6 @@
 # A short guide on where to safely eat delicious food in Chicago
 
-Supporting notebook `Descriptive Analysis.ipynb` with access to the raw and cleaned datasets [here](https://drive.google.com/drive/folders/1DY2rESGgrdFOardQYvo69dUzEoMl8KzY?usp=sharing)
+Supporting notebook `Descriptive Analysis.ipynb` with access to the raw and cleaned datasets [here](https://drive.google.com/drive/folders/1DY2rESGgrdFOardQYvo69dUzEoMl8KzY?usp=sharing)  
 Link to data story: https://huguesvinzant.github.io/ada-2019-project-jech/
 
 # Abstract
@@ -105,7 +105,7 @@ Working on three datasets simultaneously has proven to be quite a demanding and 
 - Hugues: CFI pre-processing, food chains analysis; website for data story
 - Jérémie: Yelp reviews scraping, pre-processing & analysis; folium plots
 
-We will all together design the poster and prepare the 3-minute presentation.
+We have all helped/supervised/improved the work of the other team members. We will all together design the poster and prepare the 3-minute presentation.
 
 # Questions for TAs
 - Is there a way to automatically launch the Yelp Fusion API everyday? As we are limited to 5’000 requests per day and our CFI dataset contains inspections of roughly 30’000 different food establishments, this would mean that we need at least 6 days to obtain all ratings.
