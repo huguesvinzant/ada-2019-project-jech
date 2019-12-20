@@ -65,20 +65,20 @@ header{
   font-size: 110%;
   text-align: center;
 }
+.smallIntro {
+  font-weight: normal;
+}
 #leftboxIntro {
   float:left;
-  width: 10%;
-  height: 100;
+  width: 15%;
 }
 #middleboxIntro {
   float:left;
-  width: 80%;
-  height: 200;
+  width: 70%;
 }
 #rightboxIntro {
   float:right;
-  width: 10%;
-  height: 100;
+  width: 15%;
 }
 h1{
   text-align: center;
